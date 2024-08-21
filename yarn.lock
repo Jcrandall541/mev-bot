@@ -993,6 +993,11 @@
     near-api-js "^0.44.2"
     near-seed-phrase "^0.2.0"
 
+"@colors/colors@^1.5.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@colors/colors/-/colors-1.6.0.tgz#ec6cd237440700bc23ca23087f513c75508958b0"
+  integrity sha512-Ir+AOibqzrIsL6ajt3Rz3LskB7OiMVHqltZmspbW/TJuTVuyOMirVqAkjfY6JISiLHgyNqicAC8AyHHGzNd/dA==
+
 "@coral-xyz/anchor@^0.26.0":
   version "0.26.0"
   resolved "https://registry.yarnpkg.com/@coral-xyz/anchor/-/anchor-0.26.0.tgz#c8e4f7177e93441afd030f22d777d54d0194d7d1"
@@ -1083,7 +1088,7 @@
     tiny-invariant "^1.2.0"
     tslib "^2.4.0"
 
-"@cykura/sdk-core@npm:@jup-ag/cykura-sdk-core@0.1.8", "@jup-ag/cykura-sdk-core@0.1.8":
+"@cykura/sdk-core@npm:@jup-ag/cykura-sdk-core@0.1.8":
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/@jup-ag/cykura-sdk-core/-/cykura-sdk-core-0.1.8.tgz#ba8724644e18d1006422dbba5c7701360a729b91"
   integrity sha512-bVtDA4oEuzj/amuTPVlk1OFpdlYKK6H9nKWg6Tv6mn6MydS/ArC2EY2zuMHtWP+1YJ5CAwxHL/7Kl1k+7XBSoQ==
@@ -1112,7 +1117,7 @@
   resolved "https://registry.yarnpkg.com/@datastructures-js/queue/-/queue-4.2.3.tgz#a63b155e2c1634c9b9d8fcd83969c7b3e143dff7"
   integrity sha512-GWVMorC/xi2V2ta+Z/CPgPGHL2ZJozcj48g7y2nIX5GIGZGRrbShSHgvMViJwHJurUzJYOdIdRZnWDRrROFwJA==
 
-"@dradex/idl@npm:@jup-ag/dradex-idl@0.2.1", "@jup-ag/dradex-idl@0.2.1":
+"@dradex/idl@npm:@jup-ag/dradex-idl@0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@jup-ag/dradex-idl/-/dradex-idl-0.2.1.tgz#36cf9a75ca9712c0a588b6c0050744eab3a46c49"
   integrity sha512-CZ5GZTLExy1+fw/tFOo6C4AbU0o/PcqJxxQpDp5UkSJ0SXbz7ZGMz9DfKu+htJuAwxwGgS/rbQfeBoU9fhDXuQ==
@@ -1614,6 +1619,18 @@
     decimal.js "^10.3.1"
     jsbi "^4.3.0"
 
+"@jup-ag/cykura-sdk-core@0.1.8":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@jup-ag/cykura-sdk-core/-/cykura-sdk-core-0.1.8.tgz#ba8724644e18d1006422dbba5c7701360a729b91"
+  integrity sha512-bVtDA4oEuzj/amuTPVlk1OFpdlYKK6H9nKWg6Tv6mn6MydS/ArC2EY2zuMHtWP+1YJ5CAwxHL/7Kl1k+7XBSoQ==
+  dependencies:
+    "@project-serum/anchor" "^0.22.0"
+    big.js "^5.2.2"
+    decimal.js "^10.3.1"
+    jsbi "^4.1.0"
+    tiny-invariant "^1.1.0"
+    toformat "^2.0.0"
+
 "@jup-ag/cykura-sdk@0.1.25":
   version "0.1.25"
   resolved "https://registry.yarnpkg.com/@jup-ag/cykura-sdk/-/cykura-sdk-0.1.25.tgz#03b73f9bb580cccb02e6240e43562330e0f396b6"
@@ -1635,6 +1652,14 @@
     bigint-buffer "^1.1.5"
     bignumber.js "^9.1.0"
     bn.js "^5.2.0"
+
+"@jup-ag/dradex-idl@0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@jup-ag/dradex-idl/-/dradex-idl-0.2.1.tgz#36cf9a75ca9712c0a588b6c0050744eab3a46c49"
+  integrity sha512-CZ5GZTLExy1+fw/tFOo6C4AbU0o/PcqJxxQpDp5UkSJ0SXbz7ZGMz9DfKu+htJuAwxwGgS/rbQfeBoU9fhDXuQ==
+  dependencies:
+    "@solana/buffer-layout" "4.0.0"
+    bn.js "5.2.1"
 
 "@jup-ag/dradex-sdk@0.2.3":
   version "0.2.3"
@@ -2519,11 +2544,12 @@
   dependencies:
     "@randlabs/communication-bridge" "1.0.1"
 
-"@raydium-io/raydium-sdk@^1.3.0-beta.2":
-  version "1.3.0-beta.7"
-  resolved "https://registry.yarnpkg.com/@raydium-io/raydium-sdk/-/raydium-sdk-1.3.0-beta.7.tgz#15029ab413eb0247990e03c1288f54fdd33ded71"
-  integrity sha512-VuC1ObnZDPpSfdNUivPunEs/KDJdM89Ucrtn9GxDwdwrmyp3flhjHLaOoUaVAkQnZwEbxaWb0+SEjuDqiNvlaw==
+"@raydium-io/raydium-sdk@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@raydium-io/raydium-sdk/-/raydium-sdk-1.3.0.tgz#faae1df16fa513754d9332d5b2ac7aa64a4d01c0"
+  integrity sha512-aNOQxjcyD7dVu2y0l12/dlnd/tXIzIBDqOVVz9r3P6rLEp0TQxfIm3LUc/CFrVBnRye1T08sXuOzlzr6X4KMTw==
   dependencies:
+    "@colors/colors" "^1.5.0"
     "@solana/buffer-layout" "^4.0.1"
     "@solana/spl-token" "^0.3.7"
     "@solana/web3.js" "1.73.0"
@@ -2674,7 +2700,7 @@
   dependencies:
     buffer "~6.0.3"
 
-"@solana/spl-token-3@npm:@solana/spl-token@~0.3", "@solana/spl-token@0.3.7", "@solana/spl-token@^0.3.4", "@solana/spl-token@^0.3.5", "@solana/spl-token@^0.3.6", "@solana/spl-token@^0.3.7":
+"@solana/spl-token-3@npm:@solana/spl-token@~0.3":
   version "0.3.7"
   resolved "https://registry.yarnpkg.com/@solana/spl-token/-/spl-token-0.3.7.tgz#6f027f9ad8e841f792c32e50920d9d2e714fc8da"
   integrity sha512-bKGxWTtIw6VDdCBngjtsGlKGLSmiu/8ghSt/IOYJV24BsymRbgq7r12GToeetpxmPaZYLddKwAz7+EwprLfkfg==
@@ -2708,6 +2734,15 @@
     buffer "6.0.3"
     buffer-layout "^1.2.0"
     dotenv "10.0.0"
+
+"@solana/spl-token@0.3.7", "@solana/spl-token@^0.3.4", "@solana/spl-token@^0.3.5", "@solana/spl-token@^0.3.6", "@solana/spl-token@^0.3.7":
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/@solana/spl-token/-/spl-token-0.3.7.tgz#6f027f9ad8e841f792c32e50920d9d2e714fc8da"
+  integrity sha512-bKGxWTtIw6VDdCBngjtsGlKGLSmiu/8ghSt/IOYJV24BsymRbgq7r12GToeetpxmPaZYLddKwAz7+EwprLfkfg==
+  dependencies:
+    "@solana/buffer-layout" "^4.0.0"
+    "@solana/buffer-layout-utils" "^0.2.0"
+    buffer "^6.0.3"
 
 "@solana/spl-token@^0.2.0":
   version "0.2.0"
